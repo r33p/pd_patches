@@ -1,0 +1,37 @@
+#N canvas 440 231 648 593 10;
+#X obj -124 184 gemwin;
+#X msg 139 167 destroy;
+#X msg -77 54 dimen 400 300;
+#X msg -64 79 create;
+#X msg -51 108 1;
+#X msg -105 -6 border 0;
+#X msg -89 24 offset 100 100;
+#X msg -124 -33 reset;
+#X text -76 -34 remets tous les parametre a zero;
+#X text 11 23 positionne la fenetre aux coordonnees indiquees;
+#X text 17 53 defini la taille de la fenetre (largeur \, hauteur);
+#X text -13 80 cree la fenetre;
+#X text -17 106 active le rendu;
+#X text -39 -6 enleve les decoration de fenetre \, [border 1< les rajoute
+;
+#X text 195 167 detruit la fenetre;
+#X obj -128 410 gemwin;
+#X msg 85 393 destroy;
+#X text 141 393 detruit la fenetre;
+#X msg -128 363 reset \, border 0 \, offset 100 100 \, dimen 400 300
+\, create \, 1;
+#X text -124 -100 ATTENTION: il faut cliquer les messages du premier
+(en haut) vers le dernier (en bas) \, pour que les parametres soient
+pris en compte (l'ordre est important);
+#X text -130 320 AUTRE EXEMPLE PLUS CONCIS : on peut aussi tout faire
+passer dans un seul message (plus pratique : 1 seul clic) en utilisant
+des virgules;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
+#X connect 6 0 0 0;
+#X connect 7 0 0 0;
+#X connect 16 0 15 0;
+#X connect 18 0 15 0;

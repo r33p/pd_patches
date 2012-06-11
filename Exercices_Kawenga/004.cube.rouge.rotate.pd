@@ -1,0 +1,20 @@
+#N canvas 707 264 694 454 10;
+#X obj 41 93 gemwin;
+#X msg 104 76 destroy;
+#X obj 151 133 gemhead;
+#X obj 151 346 cube;
+#X msg 41 51 reset \, border 0 \, offset 100 100 \, dimen 400 300 \,
+create \, 1;
+#X obj 151 192 colorRGB 1 0 0 1;
+#X obj 151 308 rotateXYZ 0 45 0;
+#X text 255 303 rotation de 0 sur l'axes des X \, de 45° sur l'axe
+des Y \, de 0 sur l'axe des Z;
+#X floatatom 213 258 5 0 0 0 - - -;
+#X text 253 252 <- on peut aussi faire tourner dynamiquement l'objet
+en actionnant la boite nombre;
+#X connect 1 0 0 0;
+#X connect 2 0 5 0;
+#X connect 4 0 0 0;
+#X connect 5 0 6 0;
+#X connect 6 0 3 0;
+#X connect 8 0 6 2;

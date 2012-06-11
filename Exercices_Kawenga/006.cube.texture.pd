@@ -1,0 +1,16 @@
+#N canvas 531 104 664 669 10;
+#X obj 41 103 gemwin;
+#X msg 104 86 destroy;
+#X obj 151 133 gemhead;
+#X msg 41 51 reset \, FSAA 5 \, border 1 \, offset 100 100 \, dimen
+400 300 \, create \, 1;
+#X obj 151 280 cube;
+#X obj 151 186 pix_texture image_001.jpg;
+#X obj 151 230 pix_texture;
+#X text 316 187 charge l'image depuis un fichier;
+#X text 237 228 plaque l'image sur notre volume;
+#X connect 1 0 0 0;
+#X connect 2 0 5 0;
+#X connect 3 0 0 0;
+#X connect 5 0 6 0;
+#X connect 6 0 4 0;

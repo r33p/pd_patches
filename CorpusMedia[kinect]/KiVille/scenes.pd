@@ -1,0 +1,11 @@
+#N canvas 900 55 646 357 10;
+#X text 69 50 - deplacement de la camera dans un environnement 3D;
+#X text 68 70 - deplacement de bandes texturees avec des images serielles
+;
+#X text 68 89 - pointage du corps d'un danseuse avec une lumiere ponctuelle
+;
+#X text 69 121 - tracking de la tete et des epaules pour reinjection
+sur la position de la camera dans une scene 3d;
+#X text 78 155 - constituer une ensemble de points/lignes a partir
+des donnees receuillies de la kinect \, par exemple de la position
+de la tete;

@@ -1,0 +1,32 @@
+#N canvas 640 110 647 571 10;
+#X obj 41 103 gemwin;
+#X msg 104 86 destroy;
+#X obj 151 133 gemhead;
+#X obj 151 436 pix_texture;
+#X text 229 434 plaque la texture sur le volume;
+#X obj 151 500 cube 1.7;
+#X msg 41 51 reset \, FSAA 5 \, border 1 \, offset 100 100 \, dimen
+400 300 \, create \, 1;
+#X obj 151 321 rotateXYZ 0 45 0;
+#X text 255 316 rotation de 0 sur l'axes des X \, de 45° sur l'axe
+des Y \, de 0 sur l'axe des Z;
+#X floatatom 213 271 5 0 0 0 - - -;
+#X text 253 265 <- on peut aussi faire tourner dynamiquement l'objet
+en actionnant la boite nombre;
+#X obj 171 182 gemmouse;
+#X text 229 182 <- regardez l'aide de cet objet (clic droit sur l'objet
+puis choisir 'aide');
+#X obj 213 234 * -1;
+#X obj 151 378 pix_video;
+#X text 218 376 normalement l'image de la webcam (gem devrait la trouver
+tout seul \, sinon consulter l'aide de l'objet);
+#X connect 1 0 0 0;
+#X connect 2 0 7 0;
+#X connect 3 0 5 0;
+#X connect 6 0 0 0;
+#X connect 7 0 14 0;
+#X connect 9 0 7 2;
+#X connect 11 0 13 0;
+#X connect 11 1 7 1;
+#X connect 13 0 9 0;
+#X connect 14 0 3 0;

@@ -1,0 +1,39 @@
+#N canvas 642 117 664 669 10;
+#X obj 41 103 gemwin;
+#X msg 104 86 destroy;
+#X obj 151 133 gemhead;
+#X obj 151 526 pix_texture;
+#X obj 151 242 colorRGB 1 1 1 1;
+#X text 229 524 plaque la texture sur le volume;
+#X text 262 241 blanc;
+#X obj 151 590 cube 1.7;
+#X msg 41 51 reset \, FSAA 5 \, border 1 \, offset 100 100 \, dimen
+400 300 \, create \, 1;
+#X text 317 468 charge le fichier image \, avec de la transparence
+;
+#X obj 151 183 alpha;
+#X obj 151 421 rotateXYZ 0 45 0;
+#X text 255 416 rotation de 0 sur l'axes des X \, de 45° sur l'axe
+des Y \, de 0 sur l'axe des Z;
+#X floatatom 213 371 5 0 0 0 - - -;
+#X text 253 365 <- on peut aussi faire tourner dynamiquement l'objet
+en actionnant la boite nombre;
+#X obj 171 282 gemmouse;
+#X text 229 282 <- regardez l'aide de cet objet (clic droit sur l'objet
+puis choisir 'aide');
+#X obj 213 334 * -1;
+#X text 191 180 permet d'ajouter une couche alpha a notre chaine de
+rendu;
+#X obj 151 468 pix_image texture_002.png;
+#X connect 1 0 0 0;
+#X connect 2 0 10 0;
+#X connect 3 0 7 0;
+#X connect 4 0 11 0;
+#X connect 8 0 0 0;
+#X connect 10 0 4 0;
+#X connect 11 0 19 0;
+#X connect 13 0 11 2;
+#X connect 15 0 17 0;
+#X connect 15 1 11 1;
+#X connect 17 0 13 0;
+#X connect 19 0 3 0;

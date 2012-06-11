@@ -1,0 +1,36 @@
+#N canvas 533 111 664 669 10;
+#X obj 41 103 gemwin;
+#X msg 104 86 destroy;
+#X obj 151 133 gemhead;
+#X obj 151 242 colorRGB 1 1 1 1;
+#X text 262 241 blanc;
+#X msg 41 51 reset \, FSAA 5 \, border 1 \, offset 100 100 \, dimen
+400 300 \, create \, 1;
+#X obj 151 183 alpha;
+#X text 191 180 permet d'ajouter une couche alpha a notre chaine de
+rendu;
+#X obj 151 481 translateXYZ;
+#X obj 174 356 / 20;
+#X obj 257 281 bng 15 250 50 0 empty empty empty 17 7 0 10 -260097
+-1 -1;
+#X obj 174 314 random 80;
+#X obj 174 335 - 40;
+#X obj 151 530 cube;
+#X obj 197 441 / 20;
+#X obj 197 399 random 80;
+#X obj 197 420 - 40;
+#X text 279 281 <- clic;
+#X connect 1 0 0 0;
+#X connect 2 0 6 0;
+#X connect 3 0 8 0;
+#X connect 5 0 0 0;
+#X connect 6 0 3 0;
+#X connect 8 0 13 0;
+#X connect 9 0 8 1;
+#X connect 10 0 11 0;
+#X connect 10 0 15 0;
+#X connect 11 0 12 0;
+#X connect 12 0 9 0;
+#X connect 14 0 8 2;
+#X connect 15 0 16 0;
+#X connect 16 0 14 0;
